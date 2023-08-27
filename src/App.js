@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
+import Counter from './components/Counter';
+import NavBar from './components/NavBar';
+import ProductItems from './components/ProductItems';
+import ShopingCart from './components/ShopingCart';
+import WishMessage from './components/WishMessage';
+import UserForm from './components/UserForm';
+import LoginForm from './components/LoginForm';
+import RegisterForm from './components/RegisterForm';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route>
+            <Route path='/' element={<Navigate to="/productsItems" />} />
+            <Route path="/productsItems" element={<ProductItems />} />
+            <Route path="/cart" element={<ShopingCart />} />
+            <Route path="/wish" element={<WishMessage />} />
+            <Route path="/counter" element={<Counter />} />
+            <Route path="/userform" element={<UserForm />} />
+            <Route path="/loginform" element={<LoginForm />} />
+            <Route path="/registerform" element={<RegisterForm />} />
+          </Route>
+        </Routes>
+
+
+
+
+      </BrowserRouter>
+
+    </>
   );
 }
 
