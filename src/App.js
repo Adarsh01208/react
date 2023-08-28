@@ -9,6 +9,8 @@ import WishMessage from './components/WishMessage';
 import UserForm from './components/UserForm';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
+import UserAuth from './components/UserAuth';
+import ProductCart from './components/ProductCart';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
             <Route path="/userform" element={<UserForm />} />
             <Route path="/loginform" element={<LoginForm />} />
             <Route path="/registerform" element={<RegisterForm />} />
+            <Route path="/userauth" element={<UserAuth />} />
+            <Route path="/productcart" element={<ProductCart />} />
           </Route>
         </Routes>
 
