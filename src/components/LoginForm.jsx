@@ -27,8 +27,6 @@ const LoginForm = () => {
         e.preventDefault();
         console.log(state);
     }
-
-
     return (
         <>
             {/* <pre>{JSON.stringify(state)}</pre> */}
