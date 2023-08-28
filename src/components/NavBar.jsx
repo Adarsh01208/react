@@ -24,24 +24,32 @@ export const NavBar = () => {
                                 <NavLink className="nav-link  " to="/counter">
                                     Counter
                                 </NavLink>
-
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link  " to="/wish">
                                     WishMessage
                                 </NavLink>
                             </li>
-                            <NavLink className="nav-link  " to="/cart">
-                                MyCart
-                            </NavLink>
-                            <NavLink className="nav-link  " to="/userform">
+                            {/* <NavLink className="nav-link  " to="/productItems">
+                                ProductItems
+                            </NavLink> */}
+                            <NavLink className="nav-link  " to="/user">
                                 UserForm
                             </NavLink>
-                            <NavLink className="nav-link  " to="/loginform">
+                            <NavLink className="nav-link  " to="/login">
                                 Login
                             </NavLink>
-                            <NavLink className="nav-link  " to="/registerform">
+                            <NavLink className="nav-link  " to="/register">
                                 Register
+                            </NavLink>
+                            <NavLink className="nav-link  " to="/userauth">
+                                UserAuth
+                            </NavLink>
+                            <NavLink className="nav-link  " to="/productcart">
+                                ProductCart
+                            </NavLink>
+                            <NavLink className="nav-link  " to="/parentcomponent">
+                                ParentComponent
                             </NavLink>
                         </ul>
 

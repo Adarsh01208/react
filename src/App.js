@@ -11,6 +11,7 @@ import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import UserAuth from './components/UserAuth';
 import ProductCart from './components/ProductCart';
+import ParentComponent from './components/Basics/ParentComponent';
 
 
 function App() {
@@ -20,16 +21,18 @@ function App() {
         <NavBar />
         <Routes>
           <Route>
-            <Route path='/' element={<Navigate to="/productsItems" />} />
-            <Route path="/productsItems" element={<ProductItems />} />
-            <Route path="/cart" element={<ShopingCart />} />
+            <Route path='/' element={<Navigate to="/productItems" />} />
+            <Route path="/productItems" element={<ProductItems />} />
+            <Route path="/shopingcart" element={<ShopingCart />} />
             <Route path="/wish" element={<WishMessage />} />
             <Route path="/counter" element={<Counter />} />
-            <Route path="/userform" element={<UserForm />} />
-            <Route path="/loginform" element={<LoginForm />} />
-            <Route path="/registerform" element={<RegisterForm />} />
+            <Route path="/user" element={<UserForm />} />
+            <Route path="/login" element={<LoginForm />} />
+            <Route path="/register" element={<RegisterForm />} />
             <Route path="/userauth" element={<UserAuth />} />
             <Route path="/productcart" element={<ProductCart />} />
+            <Route path="/parentcomponent" element={<ParentComponent />} />
+
           </Route>
         </Routes>
 
