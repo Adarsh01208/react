@@ -12,6 +12,7 @@ import RegisterForm from './components/RegisterForm';
 import UserAuth from './components/UserAuth';
 import ProductCart from './components/ProductCart';
 import ParentComponent from './components/Basics/ParentComponent';
+import ContactApp from './components/ContactApp';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/userauth" element={<UserAuth />} />
             <Route path="/productcart" element={<ProductCart />} />
             <Route path="/parentcomponent" element={<ParentComponent />} />
+            <Route path="/contactapp" element={<ContactApp />} />
 
           </Route>
         </Routes>

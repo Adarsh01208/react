@@ -51,6 +51,9 @@ export const NavBar = () => {
                             <NavLink className="nav-link  " to="/parentcomponent">
                                 ParentComponent
                             </NavLink>
+                            <NavLink className="nav-link  " to="/contactapp">
+                               ContactApp
+                            </NavLink>
                         </ul>
 
                     </div>
