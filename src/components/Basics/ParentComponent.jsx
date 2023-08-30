@@ -13,6 +13,8 @@ const ParentComponent = () => {
         author : data
          })
     }
+     
+
     const sendtochild = () => {
        setstate({
         name : 'hey child'
@@ -31,7 +33,10 @@ const ParentComponent = () => {
                                 <h6 className='text-white'>From Child : {state.author}</h6>
                                 <button onClick={sendtochild} className='btn btn-primary'>Send To Child</button>
                                 {/* passing data to child component using props */}
+                                
                                 <ChildComponent  name={state.name}  senddata={receiveData} />
+
+
                             </div>
                         </div>
                     </div>
