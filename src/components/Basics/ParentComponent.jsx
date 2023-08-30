@@ -13,6 +13,7 @@ const ParentComponent = () => {
         author : data
          })
     }
+   
      
 
     const sendtochild = () => {
