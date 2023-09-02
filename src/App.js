@@ -13,6 +13,8 @@ import UserAuth from './components/UserAuth';
 import ProductCart from './components/ProductCart';
 import ParentComponent from './components/Basics/ParentComponent';
 import ContactApp from './components/ContactApp';
+import DigitalClock from './components/DigitalClock';
+import UserList from './components/UserList';
 
 
 function App() {
@@ -34,6 +36,9 @@ function App() {
             <Route path="/productcart" element={<ProductCart />} />
             <Route path="/parentcomponent" element={<ParentComponent />} />
             <Route path="/contactapp" element={<ContactApp />} />
+            <Route path="/digitalclock" element={<DigitalClock />} />
+            <Route path="/userlist" element={<UserList/>} />
+        
 
           </Route>
         </Routes>

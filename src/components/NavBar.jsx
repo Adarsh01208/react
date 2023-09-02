@@ -52,7 +52,13 @@ export const NavBar = () => {
                                 ParentComponent
                             </NavLink>
                             <NavLink className="nav-link  " to="/contactapp">
-                               ContactApp
+                                ContactApp
+                            </NavLink>
+                            <NavLink className="nav-link  " to="/digitalclock">
+                                DigitalClock
+                            </NavLink>
+                            <NavLink className="nav-link  " to="/userlist">
+                               UserList
                             </NavLink>
                         </ul>
 
