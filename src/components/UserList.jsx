@@ -26,6 +26,7 @@ const UserList = () => {
         //         console.log(error)
         //     }
         // }
+
         // getAllUsers()
 
         fetchAllUsers()
