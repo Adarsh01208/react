@@ -16,6 +16,7 @@ import ContactApp from './components/ContactApp';
 import DigitalClock from './components/DigitalClock';
 import UserList from './components/UserList';
 import AxiosMethods from './components/AxiosTutorial/AxiosMethods';
+import TodoApp from './components/TodoApp';
 
 
 function App() {
@@ -39,8 +40,8 @@ function App() {
             <Route path="/contactapp" element={<ContactApp />} />
             <Route path="/digitalclock" element={<DigitalClock />} />
             <Route path="/userlist" element={<UserList/>} />
-            <Route path="/axiosmethods/get" element={<AxiosMethods/>} />
-        
+            <Route path="/axiosmethods" element={<AxiosMethods/>} />
+            <Route path="/todoapp" element={<TodoApp/>} />
 
           </Route>
         </Routes>

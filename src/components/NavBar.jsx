@@ -63,8 +63,11 @@ export const NavBar = () => {
                             <NavLink className="nav-link  " to="/userlist">
                                UserList
                             </NavLink>
-                            <NavLink className="nav-link  " to="/axiosmethods/get">
+                            <NavLink className="nav-link  " to="/axiosmethods">
                               AxiosMethods
+                            </NavLink>
+                            <NavLink className="nav-link  " to="/todoapp">
+                              ToDo App
                             </NavLink>
                         </ul>
 
