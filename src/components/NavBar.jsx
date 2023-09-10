@@ -60,6 +60,12 @@ export const NavBar = () => {
                             <NavLink className="nav-link  " to="/userlist">
                                UserList
                             </NavLink>
+                            <NavLink className="nav-link  " to="/userlist">
+                               UserList
+                            </NavLink>
+                            <NavLink className="nav-link  " to="/axiosmethods/get">
+                              AxiosMethods
+                            </NavLink>
                         </ul>
 
                     </div>

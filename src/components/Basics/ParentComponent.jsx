@@ -6,22 +6,18 @@ const ParentComponent = () => {
     const [state, setstate] = useState({
         name: '',
     })
-
     const receiveData = (data) => {
        setstate({
         ...state,
         author : data
          })
     }
-   
-     
 
     const sendtochild = () => {
        setstate({
         name : 'hey child'
             })
     }
-
 
     return (
         <>
